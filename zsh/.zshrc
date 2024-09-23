@@ -107,6 +107,8 @@ source $ZSH/oh-my-zsh.sh
 alias la="ls -la"
 alias dev="cd Developer"
 alias clr="clear"
+alias dot="z ~/.dotfiles"
+alias lg="lazygit"
 
 # Toys
 alias wisecow="fortune | cowsay"
@@ -143,4 +145,4 @@ eval "$(zoxide init zsh)"
 # You can add more config files, delimited by a comma, to this list
 
 # Replacing <your-theme> with the relevant theme file
-lazygit --use-config-file="$HOME/.config/lazygit/config.yml"
+# lazygit --use-config-file="$HOME/.config/lazygit/config.yml"

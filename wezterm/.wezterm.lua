@@ -9,5 +9,7 @@ config.macos_window_background_blur = 8
 
 config.enable_tab_bar = false
 
+config.window_decorations = "RESIZE"
+
 -- return the configuration to wezterm
 return config
