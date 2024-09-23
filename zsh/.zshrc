@@ -108,10 +108,6 @@ alias la="ls -la"
 alias dev="cd Developer"
 alias clr="clear"
 
-# to get yabai/tmux functionality because I'm a dummy.
-# maximize
-alias max="yabai -m window --toggle zoom-fullscreen"
-
 # Toys
 alias wisecow="fortune | cowsay"
 alias ytdl="youtube-dl -x --audio-format mp3"
@@ -142,3 +138,9 @@ eval $(thefuck --alias)
 # zoxide anyone?
 eval "$(zoxide init zsh)"
 
+# lazygit
+# This will instruct lazygit to open both config files, merge them, and then boot.
+# You can add more config files, delimited by a comma, to this list
+
+# Replacing <your-theme> with the relevant theme file
+lazygit --use-config-file="$HOME/.config/lazygit/config.yml"
