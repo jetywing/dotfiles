@@ -4,7 +4,11 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
-config.window_background_opacity = 0.67
+config.colors = {
+	background = "#002B36",
+}
+
+config.window_background_opacity = 0.75
 config.macos_window_background_blur = 8
 
 -- will enable if I can fix ugly border overlap
