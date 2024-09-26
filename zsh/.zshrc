@@ -103,6 +103,19 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# history setup
+HISTFILE=$HOME/.zhistory
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+
+# completion using arrow keys (based on history)
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+
 # Aliases
 alias la="ls -la"
 alias dev="cd Developer"
@@ -146,3 +159,4 @@ eval "$(zoxide init zsh)"
 
 # Replacing <your-theme> with the relevant theme file
 # lazygit --use-config-file="$HOME/.config/lazygit/config.yml"
+alias matrix='cmatrix'

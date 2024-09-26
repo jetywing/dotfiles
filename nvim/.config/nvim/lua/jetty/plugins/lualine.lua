@@ -2,11 +2,16 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
+		-- local custom_nightfly = require("lualine.themes.nightfly")
+		--
+		-- -- Change the background of lualine_c section for normal mode
+		-- custom_nightfly.background = "#112233"
+
 		require("lualine").setup({
 			options = {
-				theme = "iceberg_dark",
-				section_separators = "",
-				component_separators = "",
+				theme = "ayu_dark",
+				section_separators = { left = "", right = "" },
+				component_separators = { left = "", right = "" },
 			},
 			sections = {
 				lualine_a = { "mode" },
