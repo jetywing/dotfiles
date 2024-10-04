@@ -97,8 +97,8 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure svelte server
-		lspconfig["svelte"].setup({
+		-- configure rust server
+		lspconfig["rust_analyzer"].setup({
 			capabilities = capabilities,
 			on_attach = function(client, bufnr)
 				on_attach(client, bufnr)

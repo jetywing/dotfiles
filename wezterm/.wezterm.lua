@@ -8,7 +8,7 @@ config.colors = {
 	background = "#00151a",
 }
 
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.92
 config.macos_window_background_blur = 8
 
 -- will enable if I can fix ugly border overlap
