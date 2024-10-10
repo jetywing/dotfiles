@@ -2,7 +2,7 @@
 
 vim.opt_local.spell = true
 
-vim.opt_local.wrap = true
+vim.opt_local.wrap = false
 vim.opt_local.textwidth = 80
 
 -- Disable some weird autoindenting
