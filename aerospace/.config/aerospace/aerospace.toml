@@ -40,6 +40,9 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 on-focus-changed = "move-mouse window-lazy-center"
 
+# I do want native macos hiding
+automatically-unhide-macos-hidden-apps = false
+
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
 # - Constant:     gaps.outer.top = 8
@@ -194,4 +197,8 @@ alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.dmitrynikolaev.numi'
 run = 'layout floating'

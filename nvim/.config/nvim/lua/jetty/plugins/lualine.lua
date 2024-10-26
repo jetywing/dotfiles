@@ -2,11 +2,6 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		-- local custom_nightfly = require("lualine.themes.nightfly")
-		--
-		-- -- Change the background of lualine_c section for normal mode
-		-- custom_nightfly.background = "#112233"
-
 		require("lualine").setup({
 			options = {
 				theme = "ayu_dark",
@@ -16,7 +11,12 @@ return {
 			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
-				lualine_c = { "filename" },
+				lualine_c = {
+					{
+						"filename",
+						path = 1, -- b/c nextjs has unhelpful filenames
+					},
+				},
 				lualine_x = { "encoding", "fileformat", "filetype" },
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
