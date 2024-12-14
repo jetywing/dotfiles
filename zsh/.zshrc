@@ -116,24 +116,13 @@ setopt hist_verify
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
-# Aliases
-alias la="ls -la"
-alias dev="cd Developer"
-alias clr="clear"
-alias dot="z ~/.dotfiles"
-alias lg="lazygit"
-
-# Toys
-alias wisecow="fortune | cowsay"
-alias ytdl="youtube-dl -x --audio-format mp3"
-# alias play="fzf --multi | while read -r file; do mpv --term-osd-bar --keep-open=always "$file"; done"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# ---- Eza (better ls) -----
 
-alias lz="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+# bat config
+export BAT_THEME="Solarized (dark)"
 
 # fzf fun
 eval "$(fzf --zsh)"
@@ -159,4 +148,23 @@ eval "$(zoxide init zsh)"
 
 # Replacing <your-theme> with the relevant theme file
 # lazygit --use-config-file="$HOME/.config/lazygit/config.yml"
+
+# Aliases
+alias la="ls -la"
+alias dev="cd Developer"
+alias clr="clear"
+alias dot="z ~/.dotfiles"
+alias lg="lazygit"
+alias nv="nvim"
+
+# ---- Eza (better ls) -----
+
+alias lz="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
+# Toys
+alias wisecow="fortune | cowsay"
+alias ytdl="youtube-dl -x --audio-format mp3"
+# alias play="fzf --multi | while read -r file; do mpv --term-osd-bar --keep-open=always "$file"; done"
+
 alias matrix='cmatrix'
+alias player='mpv --display-tags-remove=Comment --display-tags-remove=Genre --display-tags-remove=Date --display-tags-remove=Track --term-osd-bar --keep-open=always .'

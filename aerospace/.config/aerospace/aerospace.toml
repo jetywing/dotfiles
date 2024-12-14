@@ -202,3 +202,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.dmitrynikolaev.numi'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.nordvpn.macos'
+run = 'layout floating'
