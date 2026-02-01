@@ -1,0 +1,12 @@
+# This is my config
+
+theme = Mathias
+
+background-opacity = 0.8
+
+macos-titlebar-style = hidden
+
+# keybindings
+
+keybind = global:alt+grave_accent=toggle_quick_terminal
+

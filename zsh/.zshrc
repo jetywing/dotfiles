@@ -168,3 +168,7 @@ alias ytdl="youtube-dl -x --audio-format mp3"
 
 alias matrix='cmatrix'
 alias player='mpv --display-tags-remove=Comment --display-tags-remove=Genre --display-tags-remove=Date --display-tags-remove=Track --term-osd-bar --keep-open=always .'
+
+# Wasmer
+export WASMER_DIR="/Users/jtewing/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
